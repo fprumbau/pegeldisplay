@@ -1,6 +1,5 @@
 #include <Update.h>
 
-#include "html.h"
 #include "global.h"
 
 void OTA::init(const char* host) {

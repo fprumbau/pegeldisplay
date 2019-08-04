@@ -3,9 +3,10 @@ const char changelog[] PROGMEM = R"=====(
 <li>1: Batterieanzeige
 <li>2: Umstellung auf Direktspannung, Updateserver hinzugef&uuml;gt
 <li>3: Erweiterung um <b>/restart</b>, Optimierung der Strings, Versionsnummer im Display
+<li>4: Umstellung auf Partialupdate, Anzeige der Solarerzeugung
 )=====";
 
-#define VERSION 3
+#define VERSION 4
 
 const char update[] PROGMEM = R"=====(
 <!DOCTYPE html><html lang="en" style="height:100%;"><head>
