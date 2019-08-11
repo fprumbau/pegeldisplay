@@ -69,7 +69,11 @@ bool SMA::read() {
 
     bezug = strtol(wlb, NULL, 16)/10.0; //in Watt
     lieferung = strtol(wll, NULL, 16)/10.0; //in Watt
-    netto = lieferung - bezug;
+
+    float newNetto = lieferung - bezug;
+    if(newNetto<20000 && newNetto>-20000) {
+      netto = lieferung - bezug;
+    }
 
     if(debug) {
       Serial.print(F("Netto: "));
